@@ -24,3 +24,12 @@ installation utility that:
 1. Is easy to use in a small project.
 2. Is cross-platform.
 3. Makes it easy to keep installed files up-to-date.
+
+``install.py`` takes inspiration from the |install_1|_ |GNU_coreutil|_, both in
+terms of functionality and the API.
+
+.. |install_1| replace:: ``install(1)``
+.. install_1: http://man7.org/linux/man-pages/man1/install.1.html
+
+.. |GNU_coreutil| replace:: GNU/Linux core utility
+.. GNU_coreutil: https://www.gnu.org/software/coreutils/coreutils.html
