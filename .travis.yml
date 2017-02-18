@@ -27,5 +27,5 @@ before_install:
   - pip install mypy flake8
   - flake8 .
   - mypy .
-install: "pip install ."
+install: exit 0
 script: exit 0
