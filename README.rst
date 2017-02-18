@@ -10,8 +10,10 @@ For instance:
    environment variable.
 2. Making system libraries available in a directory listed in your
    ``LIBRARY_PATH`` environment variable.
-3. Making git hooks available under a ``./.git/hooks`` directory.
-4. Making configuration files (e.g., ``.vimrc``) available under your home
+3. Making Python libraries available in a directory listed in your
+   ``PYTHON_PATH`` environment variable.
+4. Making git hooks available under a ``./.git/hooks`` directory.
+5. Making configuration files (e.g., ``.vimrc``) available under your home
    directory.
 
 ``install.py`` aims to provide simple, reusable means to these ends.
