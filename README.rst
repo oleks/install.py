@@ -1,6 +1,6 @@
-#########################################################
-``install`` — A simple, file-system-based install utility
-#########################################################
+############################################################
+``install.py`` — A simple, file-system-based install utility
+############################################################
 
 Fundamentally, an installation makes certain files available under certain
 directories. For instance:
@@ -18,7 +18,7 @@ Copying has the down-side that a copy may become out of date with the source.
 Some file-systems tackle this by allowing "symbolic links": files that
 seamlessly refer to other files.
 
-The ``install`` command-line utility aims to be a simple, file-system-based
+The ``install.py`` command-line utility aims to be a simple, file-system-based
 installation utility that:
 
 1. Is easy to use in a small project.
