@@ -16,7 +16,8 @@ For instance:
 5. Making configuration files (e.g., ``.vimrc``) available under your home
    directory.
 
-``install.py`` aims to provide simple, reusable means to these ends.
+``install.py`` aims to provide simple, robust, and reusable means to these
+ends, and beyond.
 
 Design Goals
 ============
