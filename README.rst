@@ -29,7 +29,7 @@ installation utility that:
 terms of functionality and the API.
 
 .. |install_1| replace:: ``install(1)``
-.. install_1: http://man7.org/linux/man-pages/man1/install.1.html
+.. _install_1: http://man7.org/linux/man-pages/man1/install.1.html
 
 .. |GNU_coreutil| replace:: GNU/Linux core utility
-.. GNU_coreutil: https://www.gnu.org/software/coreutils/coreutils.html
+.. _GNU_coreutil: https://www.gnu.org/software/coreutils/coreutils.html
