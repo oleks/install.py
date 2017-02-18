@@ -19,12 +19,15 @@ For instance:
 Design Goals
 ============
 
-The ``install.py`` command-line utility aims to be a simple, file-system-based
-installation utility that:
+In the following, the keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" are to be
+interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119)
+(Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels", BCP
+14, RFC 2119, March 1997).
 
-1. Is easy to use in a small project.
-2. Is cross-platform.
-3. Makes it easy to keep installed files up-to-date.
+1. ``install.py`` SHOULD be easy to use in (or adapt to) a small project.
+2. ``install.py`` SHOULD be cross-platform.
+3. ``install.py`` SHOULD make it easy to keep installed files up-to-date.
 
 Related Tools
 =============
