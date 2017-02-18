@@ -14,10 +14,8 @@ For instance:
 4. Making configuration files (e.g., ``.vimrc``) available under your home
    directory.
 
-Most file-systems allow for files to be *copied* from one directory to another.
-Copying has the down-side that a copy may become out of date with the source.
-Some file-systems tackle this by allowing "symbolic links": files that
-seamlessly refer to other files.
+Design Goals
+============
 
 The ``install.py`` command-line utility aims to be a simple, file-system-based
 installation utility that:
@@ -25,6 +23,9 @@ installation utility that:
 1. Is easy to use in a small project.
 2. Is cross-platform.
 3. Makes it easy to keep installed files up-to-date.
+
+Related Tools
+=============
 
 ``install.py`` takes inspiration from the |install_1|_ |GNU_coreutil|_, both in
 terms of functionality, and the API.
@@ -34,3 +35,11 @@ terms of functionality, and the API.
 
 .. |GNU_coreutil| replace:: GNU/Linux core utility
 .. _GNU_coreutil: https://www.gnu.org/software/coreutils/coreutils.html
+
+Implementation
+==============
+
+Most file-systems allow for files to be *copied* from one directory to another.
+Copying has the down-side that a copy may become out of date with the source.
+Some file-systems tackle this by allowing "symbolic links": files that
+seamlessly refer to other files.
