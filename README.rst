@@ -27,7 +27,7 @@ In the following, the keyword "SHOULD" is to be interpreted as described in
 
 .. _RFC 2119: http://tools.ietf.org/html/rfc2119
 
-1. ``install.py`` SHOULD be easy to use in (or adapt to) a small project.
+1. ``install.py`` SHOULD be easy to use in, or adapt to, a small project.
 2. ``install.py`` SHOULD be cross-platform.
 3. ``install.py`` SHOULD make it easy to keep installed files up-to-date.
 
