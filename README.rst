@@ -26,7 +26,7 @@ installation utility that:
 3. Makes it easy to keep installed files up-to-date.
 
 ``install.py`` takes inspiration from the |install_1|_ |GNU_coreutil|_, both in
-terms of functionality and the API.
+terms of functionality, and the API.
 
 .. |install_1| replace:: ``install(1)``
 .. _install_1: http://man7.org/linux/man-pages/man1/install.1.html
