@@ -6,11 +6,11 @@ An installation makes certain files available under certain directories.
 
 For instance:
 
-1. Making an executable file available in a directory listed in your ``PATH``
+1. Making executable files available in a directory listed in your ``PATH``
    environment variable.
-2. Making a library available in a directory listed in your ``LIBRARY_PATH``
-   environment variable.
-3. Making a git hook available under a ``./.git/hooks`` directory.
+2. Making system libraries available in a directory listed in your
+   ``LIBRARY_PATH`` environment variable.
+3. Making git hooks available under a ``./.git/hooks`` directory.
 4. Making configuration files (e.g., ``.vimrc``) available under your home
    directory.
 
