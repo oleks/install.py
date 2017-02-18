@@ -2,8 +2,9 @@
 ``install.py`` — A simple, file-system-based install utility
 ############################################################
 
-Fundamentally, an installation makes certain files available under certain
-directories. For instance:
+An installation makes certain files available under certain directories.
+
+For instance:
 
 1. Making an executable file available in a directory listed in your ``PATH``
    environment variable.
