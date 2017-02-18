@@ -19,6 +19,12 @@ For instance:
 ``install.py`` aims to provide simple, robust, and reusable means to these
 ends, and beyond.
 
+Project Status
+==============
+
+.. image:: https://img.shields.io/travis/oleks/install.py.svg
+   :target: https://travis-ci.org/oleks/install.py
+
 Design Goals
 ============
 
