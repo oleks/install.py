@@ -51,6 +51,8 @@ Related Tools
 Implementation
 ==============
 
+The utility is implemented as a standalone Python file, |install_py|_.
+
 Most file-systems allow for files to be *copied* from one directory to another.
 Copying has the down-side that a copy may become out of date with the source.
 Some file-systems tackle this by allowing "symbolic links": files that
@@ -58,3 +60,25 @@ seamlessly refer to other files.
 
 Symbolic links are generally available in contemporary file-systems for
 Unix-like operating systems and on Windows since Windows 6.0 (Vista).
+
+User Guide
+==========
+
+Copy |install_py|_ into the directory containing the files that you would like
+to install. Create an INI file, (e.g., called ``install.ini``) having a
+``default`` section with the properties ``src_dir``, ``dst_dir``, and
+``files``. The values of the properties may be arbitrary Python values. This is
+to allow you to specify the configuration in a platform-independent way.
+
+For instance, you might have a ``hooks`` directory in your Git repository,
+having an |install_py|_, and an ``install.ini`` that looks like this:
+
+.. code:: python
+
+  [default]
+  src_dir = os.path.dirname(__file__)
+  dst_dir = os.path.join(src_dir, '..', '.git', 'hooks')
+  files = ['pre-push']
+
+.. |install_py| replace:: ``install.py``
+.. _install_py: install.py
