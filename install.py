@@ -80,10 +80,9 @@ def _mkdirp(path: str) -> None:
             raise ValueError(
                 "{} exists, but it is not a directory.".format(
                     path))
-        else:
-            return
-    _mkdirp(os.path.dirname(path))
-    os.mkdir(path)
+    else:
+        _mkdirp(os.path.dirname(path))
+        os.mkdir(path)
 
 
 def _main(fnames: List[str], src_dir: str, dst_dir: str) -> None:
