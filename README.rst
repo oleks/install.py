@@ -56,3 +56,6 @@ Most file-systems allow for files to be *copied* from one directory to another.
 Copying has the down-side that a copy may become out of date with the source.
 Some file-systems tackle this by allowing "symbolic links": files that
 seamlessly refer to other files.
+
+Symbolic links are generally available in contemporary file-systems for
+Unix-like operating systems and on Windows since Windows 6.0 (Vista).
