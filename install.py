@@ -53,6 +53,10 @@ def _src_is_newer(src_path: str, dst_path: str) -> bool:
 
 
 def _symlink(src_path: str, dst_path: str) -> None:
+    """
+    pre:: os.path.exists(src_path)
+    pre:: os.path.exists(os.path.dirname(dst_path))
+    """
     print("Installing {} as {}".format(src_path, dst_path))
     if os.path.exists(dst_path) and not _src_is_newer(src_path, dst_path):
         return
