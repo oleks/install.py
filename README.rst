@@ -79,7 +79,7 @@ evaluating to the types ``str``, ``str``, and ``List[str]``, respectively. This
 is to allow you to specify the configuration in a platform-independent way.
 
 For instance, you might have a ``hooks`` directory in your Git repository,
-having an |install_py|_, and an ``config.ini`` that looks like this:
+having an |install_py|_, and a ``config.ini`` that looks like this:
 
 .. code:: python
 
