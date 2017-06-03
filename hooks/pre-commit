@@ -6,6 +6,7 @@ import sys
 
 
 def run_static_tests() -> None:
+    print("Runing static tests..")
     retval = subprocess.call(['python3', 'static_tests.py'])
     if retval == 0:
         print("##############")
