@@ -96,7 +96,8 @@ def _init() -> Tuple[List[str], str, str]:
     fnames = eval(config['install.py']['files'])
     assert type(src_dir) is str
     assert type(dst_dir) is str
-    assert type(fnames) is List[str]
+    assert type(fnames) is list
+    assert all((isinstance(fname, str) for fname in fnames))
     src_dir = os.path.relpath(src_dir)
     dst_dir = os.path.relpath(dst_dir)
     return (fnames, src_dir, dst_dir)
