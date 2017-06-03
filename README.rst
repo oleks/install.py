@@ -73,8 +73,9 @@ User Guide
 Copy |install_py|_ into the directory containing the files that you would like
 to install. Create an INI file, (e.g., called ``install.ini``) having a
 ``default`` section with the properties ``src_dir``, ``dst_dir``, and
-``files``. The values of the properties may be arbitrary Python values. This is
-to allow you to specify the configuration in a platform-independent way.
+``files``. The values of the properties may be arbitrary Python expressions,
+evaluating to the types ``str``, ``str``, and ``List[str]``, respectively. This
+is to allow you to specify the configuration in a platform-independent way.
 
 For instance, you might have a ``hooks`` directory in your Git repository,
 having an |install_py|_, and an ``install.ini`` that looks like this:
