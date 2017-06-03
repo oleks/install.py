@@ -18,7 +18,8 @@ For instance:
    ``LIBRARY_PATH`` environment variable.
 3. Making Python libraries available under a directory listed in your
    ``PYTHON_PATH`` environment variable.
-4. Making git hooks available under a ``./.git/hooks`` directory.
+4. Making Git hooks available under a ``.git/hooks`` (or
+   ``.git\hooks`` on Windows) directory.
 5. Making configuration files (e.g., ``.vimrc``) available under your home
    directory.
 
