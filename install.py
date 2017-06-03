@@ -65,6 +65,10 @@ def _symlink(src_path: str, dst_path: str) -> None:
 
 
 def _install_fname(fname: str, src_dir: str, dst_dir: str) -> None:
+    """
+    pre:: os.path.exists(os.path.join(src_dir, path))
+    pre:: os.path.exists(dst_dir)
+    """
     src_path = os.path.join(src_dir, fname)
     dst_path = os.path.join(dst_dir, fname)
     _symlink(src_path, dst_path)
