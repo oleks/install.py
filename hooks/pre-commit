@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+import re
+import subprocess
+import sys
+
+
+def run_static_tests() -> None:
+    retval = subprocess.call(['python3', 'static_tests.py'])
+    if retval == 0:
+        print("##############")
+        print("# Good work! #")
+        print("##############")
+    sys.exit(retval)
+
+
+def path_is_python(path: str) -> bool:
+    return path.endswith('.py') or \
+      path.startswith('hooks')  # A humble overapproximation.
+
+
+def main() -> None:
+    lines = subprocess.check_output(
+        ['git', 'diff', '--cached', '--name-status'])
+    for line in str(lines).split(r'\n'):
+        parts = line.strip().split(r'\t')
+        if len(parts) == 1:
+            continue
+        path = parts[1]
+        if path_is_python(path):
+            run_static_tests()
+
+
+if __name__ == "__main__":
+    main()
