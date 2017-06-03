@@ -87,16 +87,18 @@ def _main(fnames: List[str], src_dir: str, dst_dir: str) -> None:
 def _init() -> Tuple[List[str], str, str]:
     config = configparser.ConfigParser()
     if len(sys.argv) < 2:
-        config_path = os.path.join(os.path.dirname(__file__), 'install.ini')
+        config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
     else:
         config_path = sys.argv[1]
     config.read(config_path)
-    src_dir = os.path.relpath(eval(config['default']['src_dir']))
-    dst_dir = os.path.relpath(eval(config['default']['dst_dir']))
-    fnames = eval(config['default']['files'])
+    src_dir = eval(config['install.py']['src_dir'])
+    dst_dir = eval(config['install.py']['dst_dir'])
+    fnames = eval(config['install.py']['files'])
     assert type(src_dir) is str
     assert type(dst_dir) is str
     assert type(fnames) is List[str]
+    src_dir = os.path.relpath(src_dir)
+    dst_dir = os.path.relpath(dst_dir)
     return (fnames, src_dir, dst_dir)
 
 
