@@ -25,8 +25,11 @@ For instance:
 ``install.py`` aims to provide simple, robust, and reusable means to these
 ends, and beyond.
 
+Analysis
+========
+
 Design Goals
-============
+------------
 
 In the following, the keyword "SHOULD" is to be interpreted as described in
 `RFC 2119`_.
@@ -36,6 +39,17 @@ In the following, the keyword "SHOULD" is to be interpreted as described in
 1. ``install.py`` SHOULD be easy to use in, or adapt to a small project.
 2. ``install.py`` SHOULD be cross-platform.
 3. ``install.py`` SHOULD make it easy to keep installed files up-to-date.
+
+Symbolic Links
+--------------
+
+Most file-systems allow for files to be *copied* from one directory to another.
+Copying has the down-side that a copy may become out of date with the source.
+Some file-systems tackle this by allowing "symbolic links": files that
+seamlessly refer to other files.
+
+Symbolic links are generally available in contemporary file-systems for
+Unix-like operating systems and on Windows since Windows 6.0 (Vista).
 
 Related Tools
 =============
@@ -52,14 +66,6 @@ Implementation
 ==============
 
 The utility is implemented as a standalone Python file, |install_py|_.
-
-Most file-systems allow for files to be *copied* from one directory to another.
-Copying has the down-side that a copy may become out of date with the source.
-Some file-systems tackle this by allowing "symbolic links": files that
-seamlessly refer to other files.
-
-Symbolic links are generally available in contemporary file-systems for
-Unix-like operating systems and on Windows since Windows 6.0 (Vista).
 
 User Guide
 ==========
