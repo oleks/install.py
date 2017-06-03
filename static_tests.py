@@ -16,6 +16,6 @@ def run(command: List[str]) -> None:
 
 
 run(["flake8", "."])
-run(["mypy", "."])
+run(["mypy", "--ignore-missing-imports", "."])
 
 sys.exit(exitcode)
