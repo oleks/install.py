@@ -12,11 +12,11 @@ An installation makes certain files available under certain directories.
 
 For instance:
 
-1. Making executable files available in a directory listed in your ``PATH``
-   environment variable.
-2. Making system libraries available in a directory listed in your
+1. Making executable files available under a directory listed in your
+   ``PATH`` environment variable.
+2. Making system libraries available under a directory listed in your
    ``LIBRARY_PATH`` environment variable.
-3. Making Python libraries available in a directory listed in your
+3. Making Python libraries available under a directory listed in your
    ``PYTHON_PATH`` environment variable.
 4. Making git hooks available under a ``./.git/hooks`` directory.
 5. Making configuration files (e.g., ``.vimrc``) available under your home
