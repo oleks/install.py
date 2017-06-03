@@ -85,7 +85,12 @@ having an |install_py|_, and an ``install.ini`` that looks like this:
   [default]
   src_dir = os.path.dirname(__file__)
   dst_dir = os.path.join(src_dir, '..', '.git', 'hooks')
-  files = ['pre-push']
+  files = ['pre-commit', 'pre-push']
+
+This will take the location of the executing |install_py|_ as ``src_dir``, its
+sibling directory ``../.git/hooks/`` (or ``..\.git\hooks`` on Windows) as
+``dst_dir``, and look for the files ``pre-commit`` and ``pre-push`` to install
+from ``src_dir`` into ``dst_dir``.
 
 .. |install_py| replace:: ``install.py``
 .. _install_py: install.py
