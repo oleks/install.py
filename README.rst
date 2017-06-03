@@ -1,6 +1,6 @@
-############################################################
-``install.py`` — A simple, file-system-based install utility
-############################################################
+###########################################
+A simple, file-system-based install utility
+###########################################
 
 .. image:: https://img.shields.io/travis/oleks/install.py.svg
    :target: https://travis-ci.org/oleks/install.py
