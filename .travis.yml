@@ -25,6 +25,7 @@ matrix:
     python: "3.6"
 before_install:
   - pip install mypy flake8
+  - make
   - ./static_tests.py
 install: exit 0
 script: exit 0
