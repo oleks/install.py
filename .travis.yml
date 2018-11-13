@@ -3,14 +3,11 @@ os:
   - linux
   - osx
 python:
-  - "3.3"
   - "3.4"
   - "3.5"
-  - "3.5-dev" # 3.5 development branch
   - "3.6"
-  - "3.6-dev" # 3.6 development branch
-  - "3.7-dev" # 3.7 development branch
-  - "nightly" # currently points to 3.7-dev
+  - "3.7"
+  - "nightly"
 matrix:
   exclude:
   - os: osx
@@ -20,9 +17,9 @@ matrix:
   - os: osx
     python: "3.5"
   - os: osx
-    python: "3.5-dev"
-  - os: osx
     python: "3.6"
+  - os: osx
+    python: "3.7"
 before_install:
   - pip install mypy flake8
   - make
