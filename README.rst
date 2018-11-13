@@ -71,7 +71,29 @@ The utility is implemented as a standalone Python file, |install_py|_.
 User Guide
 ==========
 
-Copy |install_py|_ into the directory containing the files that you would like
+Where is the Python script?
+---------------------------
+
+To ensure proper accreditation, manage releases, and reduce code
+duplication, ``install.py`` is generated from `an m4 template
+<install.py.m4>`_. To get the shell script, either:
+
+  1. Fetch the
+     `latest <https://github.com/oleks/install.py/releases/latest>`_
+     `release <https://github.com/oleks/install.py/releases>`_
+     of the shell script, or;
+  2. Type ``make`` to build it, if you happen to have the
+     `m4 macro processor <https://www.gnu.org/software/m4/m4.html>`_
+     installed.
+
+     Please note, the last step of building ``install.py`` is to
+     execute ``git-ready-to-deploy.sh``. This ensures a clean release
+     of ``install.py``, so long as you mind the exit code of ``make``.
+
+What do I do with the Python script?
+------------------------------------
+
+Copy ``install_py`` into the directory containing the files that you would like
 to install. Create an INI file, (e.g., called ``config.ini``) having a
 ``install.py`` section with the properties ``src_dir``, ``dst_dir``, and
 ``files``. The values of the properties may be arbitrary Python expressions,
